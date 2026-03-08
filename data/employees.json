@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "name": "Ana Cruz",
+    "department": "IT"
+  },
+  {
+    "id": 2,
+    "name": "Mark Santos",
+    "department": "HR"
+  },
+  {
+    "id": 3,
+    "name": "John Reyes",
+    "department": "IT"
+  }
+]
