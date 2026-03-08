@@ -15,3 +15,10 @@ exports.getFilteredEmployees = (req, res) => {
 
     res.json(filtered);
 };
+
+
+// for hr employees
+exports.getHREmployees = (req, res) => {
+    const hrEmployees = employees.filter(emp => emp.department.toLowerCase() === "hr");
+    res.json(hrEmployees);
+};
