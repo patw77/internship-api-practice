@@ -5,5 +5,5 @@ const controller = require("../controllers/employeesController");
 router.get("/", controller.getEmployees);
 router.get("/filter", controller.getFilteredEmployees);
 router.get("/hr", controller.getHREmployees); // for hr employees
-
+router.get("/finance", controller.getFinanceEmployees); //for finance employees
 module.exports = router;
