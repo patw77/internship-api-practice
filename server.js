@@ -1,9 +1,15 @@
-const express = require("express");
+// server.js
+
+const express = require('express');
 const app = express();
-const employeeRoutes = require("./routes/employeesRoutes");
+const port = 3000;
 
-app.use("/api/employees", employeeRoutes); 
+// Import routes
+const employeesRoutes = require('./routes/employeesRoutes');
 
-app.listen(3000, () => {
-    console.log("Server running on http://localhost:3000");
+// Use routes
+app.use('/api/employees', employeesRoutes);
+
+app.listen(port, () => {
+    console.log(`Server running on http://localhost:${port}`);
 });
