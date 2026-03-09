@@ -35,20 +35,9 @@ exports.getItEmployees = (req, res) => {
     res.json(results);
 };
 
-<<<<<<< dev-Patricia
-// adding of one line 1
-=======
-// examplechange2
 
 
-// example add of changes
+// practice change March 9, 2026 
 
 
-//example changes 4
-
-// example change 3
-// examplechange2
-
-// example add of changes
-
->>>>>>> main
+     

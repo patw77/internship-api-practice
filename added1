@@ -1,0 +1,79 @@
+[33mcommit 2b1c700391d1b639cbecc9cd8f5e0809a9ddc545[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mdev-Patricia[m[33m)[m
+Author: patw77 <ibarretanavarro@gmail.com>
+Date:   Mon Mar 9 13:50:36 2026 +0800
+
+    Adding one line
+
+[33mcommit a70c4265ca391dfd89e2bd20969e06ce413fa5b2[m[33m ([m[1;31morigin/dev-Patricia[m[33m)[m
+Author: patw77 <ibarretanavarro@gmail.com>
+Date:   Mon Mar 9 09:46:32 2026 +0800
+
+    Add IT employees endpoint
+
+[33mcommit 79de01fd28fe2757b2e79baed2ede2425446e783[m
+Merge: 66e5935 198b1c2
+Author: Patricia <ibarretanavarro@gmail.com>
+Date:   Mon Mar 9 08:53:12 2026 +0800
+
+    Merge branch 'main' into dev-Patricia
+
+[33mcommit 66e5935d2f5227c4ade318de3ded1363716d10e7[m
+Author: patw77 <ibarretanavarro@gmail.com>
+Date:   Mon Mar 9 08:32:18 2026 +0800
+
+    Update employeesController.js
+    
+    examplechange2
+
+[33mcommit 198b1c2829d3208368de4f6658f78a18163f0a78[m
+Merge: dbf7637 8696204
+Author: Patricia <ibarretanavarro@gmail.com>
+Date:   Mon Mar 9 08:24:31 2026 +0800
+
+    Merge pull request #3 from patw77/add-new-again
+    
+    example1
+
+[33mcommit 86962049b1cc16bdf6a39e8b8eecbfbc60dea4af[m[33m ([m[1;31morigin/add-new-again[m[33m)[m
+Author: patw77 <ibarretanavarro@gmail.com>
+Date:   Mon Mar 9 08:23:05 2026 +0800
+
+    example1
+    
+    example of adding changes
+
+[33mcommit dbf7637335c76aeb4e3460d6cbec33e8159bd01b[m
+Merge: 4664bf5 a68dc4c
+Author: Patricia <ibarretanavarro@gmail.com>
+Date:   Mon Mar 9 08:17:24 2026 +0800
+
+    Merge pull request #2 from patw77/add-new-again
+    
+    Added finance employees endpoint and filter support
+
+[33mcommit a68dc4cfbbe8837711867a9ae55e50eba1901d64[m
+Author: patw77 <ibarretanavarro@gmail.com>
+Date:   Mon Mar 9 08:11:43 2026 +0800
+
+    Added finance employees endpoint and filter support
+
+[33mcommit 4664bf50d8e788c52d905a9b7f3db28cb4303c46[m
+Merge: 58e1f37 f6376c1
+Author: Patricia <ibarretanavarro@gmail.com>
+Date:   Sun Mar 8 15:50:04 2026 +0800
+
+    Merge pull request #1 from patw77/add-new-endpoint
+    
+    Added api/employees/hr endpoint
+
+[33mcommit f6376c1024e4eff9a6b8110f52ef4498109e6df9[m[33m ([m[1;31morigin/add-new-endpoint[m[33m)[m
+Author: patw77 <ibarretanavarro@gmail.com>
+Date:   Sun Mar 8 15:44:56 2026 +0800
+
+    Added api/employees/hr endpoint
+
+[33mcommit 58e1f37762957bc365fdf94487b11086b01b1ad5[m
+Author: patw77 <ibarretanavarro@gmail.com>
+Date:   Sun Mar 8 15:14:55 2026 +0800
+
+    Initial commit: set up Employee API project
