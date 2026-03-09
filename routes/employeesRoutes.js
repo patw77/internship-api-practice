@@ -1,9 +1,13 @@
-const express = require("express");
-const router = express.Router();
-const controller = require("../controllers/employeesController");
+// routes/employeesRoutes.js
 
-router.get("/", controller.getEmployees);
-router.get("/filter", controller.getFilteredEmployees);
-router.get("/hr", controller.getHREmployees); // for hr employees
-router.get("/finance", controller.getFinanceEmployees); //for finance employees
+const express = require('express');
+const router = express.Router();
+const employeesController = require('../controllers/employeesController');
+
+// Define routes
+router.get('/', employeesController.getAllEmployees);
+router.get('/hr', employeesController.getHrEmployees);
+router.get('/filter', employeesController.filterByDepartment);
+router.get('/it', employeesController.getItEmployees);
+
 module.exports = router;

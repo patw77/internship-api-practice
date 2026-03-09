@@ -1,42 +1,37 @@
-﻿// existing data (example)
+﻿// controllers/employeesController.js
+
+// Sample employee data
 const employees = [
-    { id: 1, name: "Alice", department: "HR" },
-    { id: 2, name: "Bob", department: "IT" },
-    { id: 3, name: "Charlie", department: "Finance" },
-    { id: 4, name: "Diana", department: "HR" },
-    { id: 5, name: "Ethan", department: "Finance" },
+    { id: 1, name: 'Alice', department: 'Finance' },
+    { id: 2, name: 'Bob', department: 'IT' },
+    { id: 3, name: 'Charlie', department: 'Finance' },
+    { id: 4, name: 'David', department: 'HR' }
 ];
 
-// GET all employees
-exports.getEmployees = (req, res) => {
+// Get all employees
+exports.getAllEmployees = (req, res) => {
     res.json(employees);
 };
 
-// GET HR employees
-exports.getHREmployees = (req, res) => {
-    const hrEmployees = employees.filter(emp => emp.department === "HR");
-    res.json(hrEmployees);
-};
-
-// GET filtered employees by query parameter
-exports.getFilteredEmployees = (req, res) => {
+// Filter employees by department
+exports.filterByDepartment = (req, res) => {
     const { department } = req.query;
     if (!department) {
-        return res.status(400).json({ message: "Please provide a department" });
+        return res.status(400).json({ error: 'Department query required' });
     }
-    const filtered = employees.filter(
-        emp => emp.department.toLowerCase() === department.toLowerCase()
-    );
-    res.json(filtered);
+    const results = employees.filter(e => e.department === department);
+    res.json(results);
 };
 
-// ✅ NEW: GET Finance employees
-exports.getFinanceEmployees = (req, res) => {
-    const financeEmployees = employees.filter(emp => emp.department === "Finance");
-    res.json(financeEmployees);
+// Get employees in HR (example endpoint)
+exports.getHrEmployees = (req, res) => {
+    const results = employees.filter(e => e.department === 'HR');
+    res.json(results);
 };
 
+// Example new endpoint
+exports.getItEmployees = (req, res) => {
+    const results = employees.filter(e => e.department === 'IT');
+    res.json(results);
+};
 
-    // examplechange2
-
-// example add of changes
